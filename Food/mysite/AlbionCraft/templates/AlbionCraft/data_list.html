@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Albion Craft App</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/AlbionCraft.css' %}">
+</head>
+
+<body>
+<div class="container col-ld-3">
+    <div class="jumbotron">
+        <div class="ingredient-item col-sm-4">
+            <Table class="table table-dark table-striped">
+                <center>INGREDIENTS</center>
+                <tr>
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Item Name</th>
+                      <!--   <th scope="col">Item ID</th>-->
+                        <th scope="col">Item Price</th>
+                    </tr>
+                    </thead>
+                </tr>
+                {% for ingredients_view in Ingredient %}
+                <TR>
+                    <TD>{{ ingredients_view.ingredient_name }}</TD>
+                   <!-- <TD>{{ ingredients_view.ingredient_ID }}</TD> -->
+                    <TD>{{ ingredients_view.ingredient_price }}</TD>
+                    <TD>{{ ingredients_view.mydata }}</TD>
+                </TR>
+                {% endfor %}
+
+            </Table>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

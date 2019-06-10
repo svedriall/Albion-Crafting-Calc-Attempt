@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6944e8b-d8d0-4d33-90b1-0b0164acb05e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Sved.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Food.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Food.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/items.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/migrater.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/migrater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/puller.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/puller.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +23,12 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/mysite/items.xml">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="376">
-                    <caret line="1937" column="18" lean-forward="true" selection-start-line="1937" selection-start-column="18" selection-end-line="1937" selection-end-column="18" />
+                  <state relative-caret-position="307">
+                    <caret line="13740" column="37" selection-start-line="13740" selection-start-column="22" selection-end-line="13740" selection-end-column="37" />
                   </state>
                 </provider>
               </entry>
@@ -42,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state>
               <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
@@ -54,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/puller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="459">
+              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="79" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -66,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+            <state relative-caret-position="209">
+              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -87,10 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>T5_MEAL_PIE_FISH</find>
-      <find>UNIQUE_WEAPONMASTER_IDLE_PROTOTYPE</find>
-      <find>T5_FISH_FRESHWATER_HIGHLANDS_RARE</find>
-      <find>ITEMS_MEAL_SANDWICH_FISH_DESC</find>
       <find>{</find>
       <find>T6_meal_sandwich</find>
       <find>trad</find>
@@ -111,18 +111,23 @@
       <find>LEVEL1&quot;</find>
       <find>_LEVEL3&quot;</find>
       <find>T4_2H_BOW</find>
-      <find>T4_2H_BOW</find>
       <find>_LEVEL2&quot;</find>
       <find>_LEVEL1&quot;</find>
-      <find>T8_MEAL_STEW</find>
       <find>T1_FISHSAUCE_LEVEL3@3</find>
       <find>T7_FISH_FRESHWATER_HIGHLANDS_RARE</find>
+      <find>maxreturnamount</find>
+      <find>append</find>
+      <find>T8_MEAL_STEW</find>
+      <find>consumableitem</find>
+      <find>resc_name,</find>
+      <find>Req_Namer</find>
     </findStrings>
     <replaceStrings>
       <replace>_LEVEL1@1</replace>
       <replace>_LEVEL3@3</replace>
       <replace>_LEVEL3@3&quot;</replace>
       <replace>T1_FISHSAUCE_LEVEL3</replace>
+      <replace>craft_res_main_maxreturnamount</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -152,8 +157,8 @@
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/views.py" />
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/migrater.py" />
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/puller.py" />
-        <option value="$PROJECT_DIR$/mysite/puller.py" />
         <option value="$PROJECT_DIR$/mysite/items.xml" />
+        <option value="$PROJECT_DIR$/mysite/puller.py" />
         <option value="$PROJECT_DIR$/mysite/migrater.py" />
       </list>
     </option>
@@ -170,7 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,6 +203,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,9 +284,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="0" width="1920" height="1200" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.15921193" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5020243" side_tool="true" weight="0.11513859" />
       <window_info anchor="bottom" id="Version Control" order="0" />
@@ -299,7 +304,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" x="0" y="71" width="1920" height="1058" id="Terminal" order="5" sideWeight="0.4989339" visible="true" weight="0.3567625" />
+      <window_info active="true" anchor="right" x="0" y="71" width="1920" height="1058" id="Terminal" order="5" sideWeight="0.4989339" visible="true" weight="0.56396586" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.15938166" />
@@ -390,13 +395,6 @@
       </provider>
     </entry>
     <entry file="file://C:/Program Files/Python37/Lib/xml/etree/ElementTree.py" />
-    <entry file="file://$PROJECT_DIR$/mysite/items.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="402012" column="20" selection-start-line="402012" selection-start-column="20" selection-end-line="402012" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/templates/AlbionCraft/data_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -421,13 +419,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="654" column="19" selection-start-line="654" selection-start-column="14" selection-end-line="654" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/urllib/request.py" />
     <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -448,9 +440,10 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py" />
     <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state>
           <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
@@ -458,34 +451,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/items.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="24581" column="31" selection-start-line="24581" selection-start-column="19" selection-end-line="24581" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/puller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="459">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="79" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/items.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="1937" column="18" lean-forward="true" selection-start-line="1937" selection-start-column="18" selection-end-line="1937" selection-end-column="18" />
+        <state relative-caret-position="307">
+          <caret line="13740" column="37" selection-start-line="13740" selection-start-column="22" selection-end-line="13740" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+        <state relative-caret-position="209">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>

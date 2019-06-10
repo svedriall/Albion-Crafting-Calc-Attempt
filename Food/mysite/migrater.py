@@ -14,7 +14,7 @@ def Pricer(item_id):
     file = urllib.request.urlopen(page)
     data = file.read()
     mydata = json.loads(data)
-    price = "None"
+    price = 0
     for t in range(len(mydata)):
         price = int(mydata[0]['sell_price_min'])
     return price;
@@ -25,17 +25,17 @@ def Req_Pricer(item_id, level):
     file = urllib.request.urlopen(page)
     data = file.read()
     mydata = json.loads(data)
-    resc_price = ""
-    resc_total = ""
+    resc_price = 0
+    resc_total = 0
     for t in range(len(mydata)):
         resc_price = int(mydata[0]['sell_price_min'])
         resc_count = int(level.get('count'))
         resc_total = resc_count * resc_price
-    return resc_price, resc_total;
+    return resc_price, resc _total;
 
 
-
-list = ['weapon']
+# list = ['consumableitem', 'farmableitem', 'simpleitem', 'consumablefrominventoryitem', 'equipmentitem', 'weapon', 'mount', 'furnitureitem', 'journalitem']
+list = ['consumableitem']
 
 # for tags in root:
 #     if tags.tag not in list:
@@ -48,16 +48,17 @@ for iterate in list:
         shopcategory = consumableitem.get('shopcategory')
         shopsubcategory = consumableitem.get('shopsubcategory1')
         slottype = consumableitem.get('slottype')
+        nutrition = consumableitem.get('nutrition')
 
         price = Pricer(uniqueid)
-
         print("- ID:", uniqueid,
               "- Tier:", tier,
               "- Weight:", weight,
               "- Slot:", slottype,
               "- Cat:", shopcategory,
               "- Subcat:", shopsubcategory,
-              "- Price: ", price)
+              "- Price: ", price,
+              "- Nutrition: ", nutrition,)
 
         # CRAFTING REQUIREMENTS #
         for craftingrequirements in consumableitem.findall('craftingrequirements'):
@@ -69,10 +70,11 @@ for iterate in list:
             for reqCrafts in craftingrequirements.findall('craftresource'):
                 req_name = reqCrafts.get('uniquename')
                 req_count = int(reqCrafts.get('count'))
+                maxreturnamount = reqCrafts.get('maxreturnamount')
 
                 total = Req_Pricer(req_name, reqCrafts)
 
-                print("->", "ID:", req_name, "Count:", req_count, "Total Price:", total)
+                print("->", "ID:", req_name, "Count:", req_count, "Total Price:", total, "MaxReturn: ", maxreturnamount)
         # ENCHANTED ITEM DETAILS #
         for enchantments in consumableitem.findall('enchantments'):
             for enchantment in enchantments.findall('enchantment'):
@@ -83,8 +85,8 @@ for iterate in list:
                         resc_name = craftresource.get('uniquename')
                         resc_count2 = craftresource.get('count')
 
-                        total2 = Req_Pricer(resc_name, craftreq)
+                        total2 = Req_Pricer(resc_name, craftresource)
 
-                        print("->", "ID:", resc_name, "Count:", resc_count2, 'Total:', total2)
+                        print("->", "Resc ID:", resc_name, "- Count:", resc_count2, '- Total:', total2)
         print("\n")
 print(list)

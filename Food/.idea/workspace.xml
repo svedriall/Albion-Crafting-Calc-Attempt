@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6944e8b-d8d0-4d33-90b1-0b0164acb05e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Food.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Food.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/items.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/migrater.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/migrater.py" afterDir="false" />
@@ -20,20 +15,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/mysite/items.xml">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="376">
+                    <caret line="1937" column="18" lean-forward="true" selection-start-line="1937" selection-start-column="18" selection-end-line="1937" selection-end-column="18" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="Food" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/items.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="75100" column="30" lean-forward="true" selection-start-line="75100" selection-start-column="30" selection-end-line="75100" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -58,14 +63,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
-              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            <state relative-caret-position="765">
+              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
-                <element signature="e#1714#1733#0" />
               </folding>
             </state>
           </provider>
@@ -83,9 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pumpkin</find>
-      <find>T1_FISH_FRESHWATER_ALL_COMMON</find>
-      <find>Meal_stew</find>
       <find>T5_MEAL_PIE_FISH</find>
       <find>UNIQUE_WEAPONMASTER_IDLE_PROTOTYPE</find>
       <find>T5_FISH_FRESHWATER_HIGHLANDS_RARE</find>
@@ -113,14 +114,23 @@
       <find>T4_2H_BOW</find>
       <find>_LEVEL2&quot;</find>
       <find>_LEVEL1&quot;</find>
+      <find>T8_MEAL_STEW</find>
+      <find>T1_FISHSAUCE_LEVEL3@3</find>
+      <find>T7_FISH_FRESHWATER_HIGHLANDS_RARE</find>
     </findStrings>
     <replaceStrings>
       <replace>_LEVEL1@1</replace>
       <replace>_LEVEL3@3</replace>
       <replace>_LEVEL3@3&quot;</replace>
+      <replace>T1_FISHSAUCE_LEVEL3</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Anil Karagoz &lt;svedriall@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -143,8 +153,8 @@
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/migrater.py" />
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/puller.py" />
         <option value="$PROJECT_DIR$/mysite/puller.py" />
-        <option value="$PROJECT_DIR$/mysite/migrater.py" />
         <option value="$PROJECT_DIR$/mysite/items.xml" />
+        <option value="$PROJECT_DIR$/mysite/migrater.py" />
       </list>
     </option>
   </component>
@@ -258,11 +268,18 @@
       <option name="presentableId" value="Default" />
       <updated>1558034807100</updated>
     </task>
+    <task id="LOCAL-00001" summary="Edited XML">
+      <created>1560162006053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560162006053</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="0" width="1920" height="1200" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.15921193" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -282,7 +299,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" x="0" y="71" width="1920" height="1058" id="Terminal" order="5" sideWeight="0.4989339" visible="true" weight="0.3684771" />
+      <window_info active="true" anchor="right" x="0" y="71" width="1920" height="1058" id="Terminal" order="5" sideWeight="0.4989339" visible="true" weight="0.3567625" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.15938166" />
@@ -305,6 +322,10 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info active="true" anchor="right" x="-1920" y="23" width="1920" height="1057" id="Terminal" order="5" sideWeight="0.4989339" type="WINDOWED" visible="true" weight="0.26332623" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Edited XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited XML" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/models.py" />
@@ -454,21 +475,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
+    <entry file="file://$PROJECT_DIR$/mysite/items.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-            <element signature="e#1714#1733#0" />
-          </folding>
+        <state relative-caret-position="376">
+          <caret line="1937" column="18" lean-forward="true" selection-start-line="1937" selection-start-column="18" selection-end-line="1937" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/items.xml">
+    <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="75100" column="30" lean-forward="true" selection-start-line="75100" selection-start-column="30" selection-end-line="75100" selection-end-column="30" />
+        <state relative-caret-position="765">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

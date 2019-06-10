@@ -9,41 +9,33 @@ tree = ET.parse('items.xml')
 root = tree.getroot()
 
 
-
-# for consumableitem in root.findall('consumableitem'):
-#     name = consumableitem.get('uniquename')
-#     print(name)
-#     abilitypower = consumableitem.get('abilitypower')
-#     amountcrafted = consumableitem.get('amountcrafted')
-#     for craftingrequirements in consumableitem:
-#         for enchantments in consumableitem.findall('enchantments'):
-#             for enchantment in enchantments.findall('enchantment'):
-#                 print("Level: ",enchantment.get('enchantmentlevel'))
-#                 for x in enchantment.findall('craftresource'):
-#                     print(craftsource.get('uniquename'))
-#         for craftsource in craftingrequirements.findall('craftresource'):
-#             print("-->",craftsource.get('uniquename'),craftsource.get('count'))
-
-# for consumableitem in tree.iter('consumableitem'):
-#     print(consumableitem.attrib)
-#     print(" ")
-#     for craftingrequirements in consumableitem:
-#         print(craftingrequirements.attrib)
-#         for craftresource in craftingrequirements:
-#             print(craftresource.get('uniquename'),craftresource.get('count'))
+def Pricer(item_id):
+    page = "https://www.albion-online-data.com/api/v2/stats/prices/" + item_id + "?locations=Caerleon&qualities=0"
+    file = urllib.request.urlopen(page)
+    data = file.read()
+    mydata = json.loads(data)
+    price = "None"
+    for t in range(len(mydata)):
+        price = int(mydata[0]['sell_price_min'])
+    return price;
 
 
-# for items in tree.iter('weapon'):
-#     if items not in output:
-#         output.append(items.get('uniquename'))
-# for x in output:
-#     print(x)
+def Req_Pricer(item_id, level):
+    page = "https://www.albion-online-data.com/api/v2/stats/prices/" + item_id + "?locations=Caerleon&qualities=0"
+    file = urllib.request.urlopen(page)
+    data = file.read()
+    mydata = json.loads(data)
+    resc_price = ""
+    resc_total = ""
+    for t in range(len(mydata)):
+        resc_price = int(mydata[0]['sell_price_min'])
+        resc_count = int(level.get('count'))
+        resc_total = resc_count * resc_price
+    return resc_price, resc_total;
 
-# for items in tree.iter():
-#     print(items.get('uniquename'))
 
-# list = ['farmableitem', 'simpleitem', 'consumableitem', 'consumablefrominventoryitem', 'equipmentitem', 'weapon', 'mount', 'furnitureitem', 'journalitem']
-list = ['consumableitem']
+
+list = ['weapon']
 
 # for tags in root:
 #     if tags.tag not in list:
@@ -51,46 +43,36 @@ list = ['consumableitem']
 for iterate in list:
     for consumableitem in root.findall(iterate):
         uniqueid = consumableitem.get('uniquename')
-        amountcrafted = consumableitem.get('amountcrafted')
         tier = consumableitem.get('tier')
         weight = consumableitem.get('weight')
         shopcategory = consumableitem.get('shopcategory')
         shopsubcategory = consumableitem.get('shopsubcategory1')
-        craftingfocus = consumableitem.get('craftingfocus')
         slottype = consumableitem.get('slottype')
 
-        page = "https://www.albion-online-data.com/api/v2/stats/prices/" + uniqueid + "?locations=Caerleon&qualities=0"
-        file = urllib.request.urlopen(page)
-        data = file.read()
-        mydata = json.loads(data)
+        price = Pricer(uniqueid)
 
-        for t in range(len(mydata)):
-            price = mydata[0]['sell_price_min']
-
-        print("- ID:",uniqueid,
-              "- Tier:",tier,
-              "- Amount:", amountcrafted,
-              "- Weight:", weight)
-        print("- Slot:", slottype,
-              "- FCS:",craftingfocus,
+        print("- ID:", uniqueid,
+              "- Tier:", tier,
+              "- Weight:", weight,
+              "- Slot:", slottype,
               "- Cat:", shopcategory,
               "- Subcat:", shopsubcategory,
-              "Price: ", price)
+              "- Price: ", price)
 
         # CRAFTING REQUIREMENTS #
         for craftingrequirements in consumableitem.findall('craftingrequirements'):
+
+            amountcrafted = craftingrequirements.get('amountcrafted')
+            craftingfocus = craftingrequirements.get('craftingfocus')
+
+            print("- FCS:", craftingfocus, 'Crft Amt:', amountcrafted)
             for reqCrafts in craftingrequirements.findall('craftresource'):
+                req_name = reqCrafts.get('uniquename')
+                req_count = int(reqCrafts.get('count'))
 
-                page2 = "https://www.albion-online-data.com/api/v2/stats/prices/" + reqCrafts.get('uniquename') + "?locations=Caerleon&qualities=0"
-                file2 = urllib.request.urlopen(page2)
-                data2 = file2.read()
-                mydata2 = json.loads(data2)
+                total = Req_Pricer(req_name, reqCrafts)
 
-                for t in range(len(mydata)):
-                    req_price = int(mydata2[0]['sell_price_min'])
-                    total = int(reqCrafts.get('count')) * req_price
-
-                print("->", "ID:", reqCrafts.get('uniquename'),"Count:", reqCrafts.get('count'), "ReqPrice:",total)
+                print("->", "ID:", req_name, "Count:", req_count, "Total Price:", total)
         # ENCHANTED ITEM DETAILS #
         for enchantments in consumableitem.findall('enchantments'):
             for enchantment in enchantments.findall('enchantment'):
@@ -98,6 +80,11 @@ for iterate in list:
                 # CRAFT SOURCES #
                 for craftreq in enchantment.findall('craftingrequirements'):
                     for craftresource in craftreq.findall('craftresource'):
-                        print("->", "ID:", craftresource.get('uniquename'), "Count:",craftresource.get('count'))
+                        resc_name = craftresource.get('uniquename')
+                        resc_count2 = craftresource.get('count')
+
+                        total2 = Req_Pricer(resc_name, craftreq)
+
+                        print("->", "ID:", resc_name, "Count:", resc_count2, 'Total:', total2)
         print("\n")
 print(list)

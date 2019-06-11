@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f6944e8b-d8d0-4d33-90b1-0b0164acb05e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/items.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/migrater.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/migrater.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,67 +13,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/mysite/items.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="376">
-                    <caret line="1937" column="18" lean-forward="true" selection-start-line="1937" selection-start-column="18" selection-end-line="1937" selection-end-column="18" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="Food" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/puller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,7 +29,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>T5_MEAL_PIE_FISH</find>
       <find>UNIQUE_WEAPONMASTER_IDLE_PROTOTYPE</find>
       <find>T5_FISH_FRESHWATER_HIGHLANDS_RARE</find>
       <find>ITEMS_MEAL_SANDWICH_FISH_DESC</find>
@@ -117,6 +58,7 @@
       <find>T8_MEAL_STEW</find>
       <find>T1_FISHSAUCE_LEVEL3@3</find>
       <find>T7_FISH_FRESHWATER_HIGHLANDS_RARE</find>
+      <find>T4_poiton_heal</find>
     </findStrings>
     <replaceStrings>
       <replace>_LEVEL1@1</replace>
@@ -299,7 +241,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" x="0" y="71" width="1920" height="1058" id="Terminal" order="5" sideWeight="0.4989339" visible="true" weight="0.3567625" />
+      <window_info anchor="right" x="0" y="71" width="1920" height="1058" id="Terminal" order="5" sideWeight="0.4989339" weight="0.3567625" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.15938166" />
@@ -475,20 +417,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="68" column="70" lean-forward="true" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/items.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="1937" column="18" lean-forward="true" selection-start-line="1937" selection-start-column="18" selection-end-line="1937" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="65" column="52" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

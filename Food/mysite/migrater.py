@@ -23,6 +23,34 @@ failed_prices_list = []
 failed_names_500_list = []
 failed_names_localized_list = []
 
+## SLOT TYPES:
+# food, potion, None, offhand, cape, bag, head, armor, shoes, mainhand, mount
+
+## SHOP CATEGORIES:
+# consumables, farmables, products, materials, luxurygoods, other, token, resources,
+# artefacts, cityresources, offhand, accessories, armor, melee, gatherergear, tools,
+# ranged, magic, mounts, furniture, trophies
+
+## SHOP SUB CATEGORIES:
+# fish, potion, fishingbait, cooked, vanity, seed, animals, farming, other, martlock,
+# lymhurst, fortsterling, thetford, bridgewatch, caerleon, mission, arenasigils, maps,
+# royalsigils, event, wood, rock, ore, hide, fiber, planks, stoneblock, metalbar, leather,
+# cloth, magic_artefact, ranged_artefact, melee_artefact, offhand_artefact, armor_artefact,
+# essence, rune, soul, relic, trash, treeheart, rockheart, beastheart, mountainheart, vineheart,
+# skillbook, shield, book, orb, totem, torch, horn, cape, bag, unique_helmet, unique_armor,
+# unique_shoes, mace, leather_helmet, leather_armor, leather_shoes, plate_helmet, plate_armor,
+# plate_shoes, cloth_helmet, cloth_armor, cloth_shoes, fibergatherer_helmet, fibergatherer_armor,
+# fibergatherer_shoes, fibergatherer_backpack, hidegatherer_helmet, hidegatherer_armor, hidegatherer_shoes,
+# hidegatherer_backpack, oregatherer_helmet, oregatherer_armor, oregatherer_shoes, oregatherer_backpack,
+# rockgatherer_helmet, rockgatherer_armor, rockgatherer_shoes, rockgatherer_backpack, woodgatherer_helmet,
+# woodgatherer_armor, woodgatherer_shoes, woodgatherer_backpack, fishgatherer_helmet, fishgatherer_armor,
+# fishgatherer_shoes, fishgatherer_backpack, pickaxe, stonehammer, woodaxe, sickle, skinningknife,
+# demolitionhammer, fishing, crossbow, bow, cursestaff, firestaff, froststaff, arcanestaff, holystaff,
+# naturestaff, dagger, spear, axe, sword, quarterstaff, hammer, rare_mount, ridinghorse, armoredhorse,
+# ox, repairkit, flag, banner, chest, unique, bed, table, decoration_furniture, morgana_furniture, keeper
+# _furniture, heretic_furniture, generaltrophy, mercenarytrophy, hidetrophy, oretrophy, fibertrophy,
+# rocktrophy, woodtrophy, fishtrophy, journal
+
 def Pricer(item_id):
     global price
     try:
@@ -78,7 +106,7 @@ def Namer(item_id):
             item_id = item_id.replace('_LEVEL1@', '@')
         elif item_id.find('_LEVEL2') != -1:
             item_id = item_id.replace('_LEVEL2@', '@')
-        elif uniqueid.find('_LEVEL3') != -1:
+        elif item_main_id.find('_LEVEL3') != -1:
             item_id = item_id.replace('_LEVEL3@', '@')
         page = "https://gameinfo.albiononline.com/api/gameinfo/items/" + item_id + "/data"
         file = urllib.request.urlopen(page)
@@ -105,20 +133,21 @@ list = ['consumableitem', 'farmableitem', 'simpleitem', 'consumablefrominventory
 for iterate in list:
     for item in root.findall(iterate):
         #### MAIN ITEM INFO #####
-        uniqueid = str(item.get('uniquename'))
+        item_main_id = str(item.get('uniquename'))
         temp_id = str(item.get('uniquename'))
-        tier = item.get('tier')
-        weight = item.get('weight')
-        shopcategory = item.get('shopcategory')
-        shopsubcategory = item.get('shopsubcategory1')
-        slottype = item.get('slottype')
+        item_main_tier = item.get('tier')
+        item_main_weight = item.get('weight')
+        item_main_shopcategory = item.get('shopcategory')
+        item_main_shopsubcategory = item.get('shopsubcategory1')
+        item_main_slottype = item.get('slottype')
         #### WHAT TO SUBCAT ####
-        if shopsubcategory == "cooked":
+        if item_main_shopsubcategory != "fish":
             # price = Pricer(uniqueid)
+            temp_count_list = []
 
-            nutrition = item.get('nutrition')
-            if nutrition is None:
-                nutrition = "Not Food"
+            item_main_nutrition = item.get('nutrition')
+            if item_main_nutrition is None:
+                item_main_nutrition = "Not Food"
 
             # item_name = Namer(uniqueid)
             # if item_name == "500 ERROR - WRONG ID":
@@ -136,68 +165,83 @@ for iterate in list:
             # print("| Nutrition: ", nutrition,
             #       "| Weight:", weight, )
 
-            # CRAFTING REQUIREMENTS #
             for craftingrequirements in item.findall('craftingrequirements'):
 
-                amountcrafted = craftingrequirements.get('amountcrafted')
-                if amountcrafted is None:
-                    amountcrafted = "1"
+                item_main_amountcrafted = craftingrequirements.get('amountcrafted')
+                if item_main_amountcrafted is None:
+                    item_main_amountcrafted = "1"
 
-                craftingfocus = craftingrequirements.get('craftingfocus')
-                if craftingfocus is None:
-                    craftingfocus = "Not Craftable"
+                item_main_craftingsource = craftingrequirements.get('craftingfocus')
+                if item_main_craftingsource is None:
+                    item_main_craftingsource = "Not Craftable"
 
                 # print("| Crft. Focus:", craftingfocus, '- Crafted Amount:', amountcrafted)
-                req_main_list = []
+                item_main_resource_count_list = []
+                item_main_resource_list = []
                 for CraftingRequirements_Attrib in craftingrequirements.findall('craftresource'):
-                    req_main_id = CraftingRequirements_Attrib.get('uniquename')
-                    req_main_count = int(CraftingRequirements_Attrib.get('count'))
+                    item_main_resource_id = CraftingRequirements_Attrib.get('uniquename')
+                    item_main_resource_count = str(CraftingRequirements_Attrib.get('count'))
 
-                    maxreturnamount = CraftingRequirements_Attrib.get('maxreturnamount')
-                    if maxreturnamount is None:
-                        maxreturnamount = "0"
+                    item_main_resource_maxreturnamount = CraftingRequirements_Attrib.get('maxreturnamount')
+                    if item_main_resource_maxreturnamount is None:
+                        item_main_resource_maxreturnamount = "0"
                     # req_main_name = Namer(req_main_id)
-                    req_main_list.append(req_main_id)
+
+                    item_main_resource_list.append(item_main_resource_id)
+                    item_main_resource_count_list.append(item_main_resource_count)
 
                     # total = Req_Pricer(req_main_id, CraftingRequirements_Attrib)
                     # print("->", "ID:", req_main_name, "Count:", req_main_count, "Total Price:", total, "MaxReturn: ",maxreturnamount)
+
             # ENCHANTED ITEM DETAILS #
-            newlist = []
-            newlist = str(",".join(req_main_list))
-            print(uniqueid,":",newlist)
-            c.execute("INSERT INTO Components VALUES ('" + uniqueid + "','" + newlist + "')");
+
+
+            temp_list = []
+            temp_count_list = []
+            temp_list = str(",".join(item_main_resource_list))
+            temp_count_list = ",".join(item_main_resource_count_list)
+            print(item_main_id, ":", temp_list, temp_count_list)
+            c.execute("INSERT INTO Components VALUES ('" + item_main_id + "','" + temp_list + "','" + temp_count_list + "')");
             # x = "INSERT INTO Components VALUES ('" + uniqueid + ",'" + newlist + "')"
+
+
+
+
             # print(x)
             # c.execute(x);
             for enchantments in item.findall('enchantments'):
                 for enchantment in enchantments.findall('enchantment'):
                     enchantmentlevel = enchantment.get('enchantmentlevel')
-                    uniqueid = temp_id + "@" + enchantmentlevel
+                    item_ench_resource_list = []  # CLEAR ENCHANTED ITEM RESOURCES LIST
+                    item_ench_resource_count_list = []
+
+                    item_main_id = temp_id + "@" + enchantmentlevel  # GET TEMP ID FOR ENCHANTED ITEM
+
                     # print("ID:", uniqueid, "Enchant:", enchantment.get('enchantmentlevel'))
                     # CRAFT SOURCES #
-                    for craftreq in enchantment.findall('craftingrequirements'):
-                        req_main_list = []
-                        newlist = []
-                        for craftresource in craftreq.findall('craftresource'):
+                    for item_ench_req in enchantment.findall('craftingrequirements'):
+                        temp_list = [] # CREATE NEW DB LIST
+                        for item_ench in item_ench_req.findall('craftresource'):
 
-                            resc_id = craftresource.get('uniquename')
-                            resc_count2 = craftresource.get('count')
-                            req_main_list.append(resc_id)
+                            item_ench_resource_id = item_ench.get('uniquename')  # ENCHANTED SOURCE LOOP
+                            item_ench_resource_count = item_ench.get('count') #  ENCHANTED SOURCE COUNT LOOP
+                            item_ench_resource_list.append(item_ench_resource_id)  # ADDING SOURCES TO LIST
+                            item_ench_resource_count_list.append(item_ench_resource_count)
 
                             # resc_name = Namer(resc_id)
-                            # total2 = Req_Pricer(resc_id, craftresource)
-
+                            # total2 = Req_Pricer(resc_id, item_ench)
                             # print("->", "Resc ID:", resc_id, "- Count:", resc_count2, '- Total:')
+                        ### DB INSERTION ENCHANTED ###
 
-                        newlist = str(",".join(req_main_list))
-                        print(uniqueid, ":", newlist)
-                        c.execute("INSERT INTO Components VALUES ('" + uniqueid + "','" + newlist + "')");
+                        temp_list = str(",".join(item_ench_resource_list))
+                        temp_count_list = str(",".join(item_ench_resource_count_list))
+                        print(item_main_id, ":", temp_list,temp_count_list)
+                        c.execute("INSERT INTO Components VALUES ('" + item_main_id + "','" + temp_list + "','" + temp_count_list + "')");
+
+                        ###############################
             # print("\n")
 # print(list)
 print("######### SUCCESS #########")
-print(*failed_names_localized_list, sep=", ")
-# print("\n")
-print(*failed_prices_list, sep=", ")
 
 conn.commit();
 conn.close();

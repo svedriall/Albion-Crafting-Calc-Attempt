@@ -86,38 +86,38 @@ def Namer(item_id):
     return resc_itemname;
 
 
-uniqueid = "T3_VANITY_CONSUMABLE_FIREWORKS_BLUE"
-# uniqueid = "T6_RANDOM_DUNGEON_TOKEN_3"
-x = Pricer(uniqueid)
+# uniqueid = "T3_VANITY_CONSUMABLE_FIREWORKS_BLUE"
+# # uniqueid = "T6_RANDOM_DUNGEON_TOKEN_3"
+# x = Pricer(uniqueid)
 
 list = ['consumableitem', 'farmableitem', 'simpleitem', 'consumablefrominventoryitem', 'equipmentitem', 'weapon', 'mount', 'furnitureitem', 'journalitem']
 
 
-# for iterate in list:
-#     for consumableitem in root.findall(iterate):
-#         shopcategory = consumableitem.get('shopcategory')
-#         shopsubcategory = consumableitem.get('shopsubcategory1')
-#         slottype = consumableitem.get('slottype')
-#         uniqueid = consumableitem.get('uniquename')
+for iterate in list:
+    for consumableitem in root.findall(iterate):
+        shopcategory = consumableitem.get('shopcategory')
+        shopsubcategory = consumableitem.get('shopsubcategory1')
+        slottype = consumableitem.get('slottype')
+        uniqueid = consumableitem.get('uniquename')
 
 
-        # print(slottype,shopcategory,shopsubcategory)
-        #
-        # if shopcategory not in shopcategory_list:
-        #     shopcategory_list.append(shopcategory)
-        # if shopsubcategory not in shopsubcategory_list:
-        #     shopsubcategory_list.append(shopsubcategory)
-        # if slottype not in slottype_list:
-        #     slottype_list.append(slottype)
+        print(slottype,shopcategory,shopsubcategory)
 
-# print(*slottype_list, sep = ", ")
-# print("\n")
-# print(*shopcategory_list, sep = ", ")
-# print("\n")
-# print(*shopsubcategory_list, sep = ", ")
+        if shopcategory not in shopcategory_list:
+            shopcategory_list.append(shopcategory)
+        if shopsubcategory not in shopsubcategory_list:
+            shopsubcategory_list.append(shopsubcategory)
+        if slottype not in slottype_list:
+            slottype_list.append(slottype)
 
-# print(*failed_names_list, sep = ", ")
-# print(*failed_prices_list, sep = ", ")
+print(*slottype_list, sep = ", ")
+print("\n")
+print(*shopcategory_list, sep = ", ")
+print("\n")
+print(*shopsubcategory_list, sep = ", ")
+
+print(*failed_names_list, sep = ", ")
+print(*failed_prices_list, sep = ", ")
 
 
 

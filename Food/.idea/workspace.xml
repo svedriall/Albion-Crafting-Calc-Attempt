@@ -4,16 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/mysite/AlbionCraft" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6944e8b-d8d0-4d33-90b1-0b0164acb05e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Food.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Food.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/AO.db" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/AO.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/items.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/migrater.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/migrater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/puller.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/puller.py" afterDir="false" />
-    </list>
+    <list default="true" id="f6944e8b-d8d0-4d33-90b1-0b0164acb05e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+            <state relative-caret-position="389">
+              <caret line="213" column="44" lean-forward="true" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="50" />
               <folding>
                 <element signature="e#435#1177#0" />
                 <element signature="e#1216#2185#0" />
@@ -497,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+        <state relative-caret-position="389">
+          <caret line="213" column="44" lean-forward="true" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="50" />
           <folding>
             <element signature="e#435#1177#0" />
             <element signature="e#1216#2185#0" />

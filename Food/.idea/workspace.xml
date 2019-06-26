@@ -4,7 +4,16 @@
     <bookmark url="file://$PROJECT_DIR$/mysite/AlbionCraft" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6944e8b-d8d0-4d33-90b1-0b0164acb05e" name="Default Changelist" comment="" />
+    <list default="true" id="f6944e8b-d8d0-4d33-90b1-0b0164acb05e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Food.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Food.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/AO.db" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/AO.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/AO.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/AO.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/migrater.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/migrater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/puller.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/puller.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="243">
               <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
@@ -28,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/puller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="959">
-              <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="38" />
+            <state relative-caret-position="810">
+              <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
               <folding>
                 <element signature="e#376#1134#0" />
                 <element signature="e#1173#1947#0" />
@@ -42,16 +51,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="213" column="44" lean-forward="true" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="50" />
+            <state relative-caret-position="280">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
-                <element signature="e#435#1177#0" />
-                <element signature="e#1216#2185#0" />
-                <element signature="e#2212#3119#0" />
-                <element signature="e#4034#4063#0" />
+                <element signature="e#2512#3254#0" />
+                <element signature="e#3293#4262#0" />
+                <element signature="e#4289#5200#0" />
               </folding>
             </state>
           </provider>
@@ -60,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/items.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="5304" column="57" selection-start-line="5304" selection-start-column="33" selection-end-line="5304" selection-end-column="57" />
+            <state relative-caret-position="1128438">
+              <caret line="41794" column="63" selection-start-line="41794" selection-start-column="63" selection-end-line="41794" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -78,10 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>T5_CLOTH_LEVEL2</find>
-      <find>T5_CLOTH</find>
-      <find>T5_CLOTH&quot;</find>
-      <find>T8_cloth&quot;</find>
       <find>shopcategory=&quot;resources&quot;</find>
       <find>QUESTITEM_HEAVY_FIREBARREL</find>
       <find>QUESTITEM_EXP_TOKEN_D15_T6_EXP_HRD_UNDEAD_RECRUITMENT</find>
@@ -99,7 +103,6 @@
       <find>Pricer</find>
       <find>namer</find>
       <find>req_main_list</find>
-      <find>c.</find>
       <find>T4_Bread</find>
       <find>Weapon</find>
       <find>t4_potion_heal</find>
@@ -108,6 +111,11 @@
       <find>T1_FACTION_SWAMP_TOKEN_1</find>
       <find>item_ench_resource_list</find>
       <find>temp_list</find>
+      <find>Uma estrutura</find>
+      <find>t8_meal_stew</find>
+      <find>Beef stew</find>
+      <find>&quot;40&quot;</find>
+      <find>c.</find>
     </findStrings>
     <replaceStrings>
       <replace>_LEVEL1@1</replace>
@@ -146,9 +154,9 @@
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/views.py" />
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/migrater.py" />
         <option value="$PROJECT_DIR$/mysite/AlbionCraft/puller.py" />
-        <option value="$PROJECT_DIR$/mysite/puller.py" />
         <option value="$PROJECT_DIR$/mysite/items.xml" />
         <option value="$PROJECT_DIR$/mysite/migrater.py" />
+        <option value="$PROJECT_DIR$/mysite/puller.py" />
       </list>
     </option>
   </component>
@@ -164,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,7 +201,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,7 +208,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -285,13 +293,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" weight="0.16187434" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" weight="0.16311301" />
       <window_info id="Structure" order="1" sideWeight="0.5032258" side_tool="true" weight="0.16080937" />
       <window_info id="Favorites" order="2" sideWeight="0.5020243" side_tool="true" weight="0.11513859" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32942238" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32942238" />
       <window_info anchor="bottom" id="Python Console" order="1" weight="0.32851985" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5010661" side_tool="true" weight="0.36344755" />
@@ -302,12 +309,13 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32942238" />
+      <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.32942238" />
       <window_info anchor="right" id="R Packages" order="0" weight="0.18550107" />
       <window_info anchor="right" id="R Graphics" order="1" weight="0.32960597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info active="true" anchor="right" x="772" y="169" width="644" height="391" id="Terminal" order="5" sideWeight="0.4989339" visible="true" weight="0.35303515" />
+      <window_info active="true" anchor="right" x="772" y="169" width="644" height="391" id="Terminal" order="5" sideWeight="0.4989339" visible="true" weight="0.22867803" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979757" visible="true" weight="0.15938166" />
@@ -447,19 +455,19 @@
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py" />
-    <entry file="file://$PROJECT_DIR$/mysite/items.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="38573" column="38" selection-start-line="38573" selection-start-column="35" selection-end-line="38573" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/AO.db">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/items.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1084">
+          <caret line="24457" column="31" selection-start-line="24457" selection-start-column="22" selection-end-line="24457" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/AlbionCraft/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="243">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
@@ -467,34 +475,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/puller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="38" />
-          <folding>
-            <element signature="e#376#1134#0" />
-            <element signature="e#1173#1947#0" />
-            <element signature="e#1974#2825#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/items.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="5304" column="57" selection-start-line="5304" selection-start-column="33" selection-end-line="5304" selection-end-column="57" />
+        <state relative-caret-position="1128438">
+          <caret line="41794" column="63" selection-start-line="41794" selection-start-column="63" selection-end-line="41794" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/migrater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="213" column="44" lean-forward="true" selection-start-line="213" selection-start-column="39" selection-end-line="213" selection-end-column="50" />
+        <state relative-caret-position="280">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
-            <element signature="e#435#1177#0" />
-            <element signature="e#1216#2185#0" />
-            <element signature="e#2212#3119#0" />
-            <element signature="e#4034#4063#0" />
+            <element signature="e#2512#3254#0" />
+            <element signature="e#3293#4262#0" />
+            <element signature="e#4289#5200#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/puller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
+          <folding>
+            <element signature="e#376#1134#0" />
+            <element signature="e#1173#1947#0" />
+            <element signature="e#1974#2825#0" />
           </folding>
         </state>
       </provider>

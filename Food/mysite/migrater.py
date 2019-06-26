@@ -123,8 +123,11 @@ def Namer(item_id):
         failed_names_500_list.append(item_id)
     return resc_itemname;
 
-list = ['consumableitem', 'farmableitem', 'simpleitem', 'consumablefrominventoryitem', 'equipmentitem', 'weapon', 'mount', 'furnitureitem', 'journalitem']
-# list = ['consumableitem']
+def Mapper(item_list):
+
+
+# list = ['consumableitem', 'farmableitem', 'simpleitem', 'consumablefrominventoryitem', 'equipmentitem', 'weapon', 'mount', 'furnitureitem', 'journalitem']
+list = ['consumableitem']
 
 # for tags in root:
 #     if tags.tag not in list:
@@ -194,18 +197,14 @@ for iterate in list:
                     # print("->", "ID:", req_main_name, "Count:", req_main_count, "Total Price:", total, "MaxReturn: ",maxreturnamount)
 
             # ENCHANTED ITEM DETAILS #
-
-
             temp_list = []
             temp_count_list = []
             temp_list = str(",".join(item_main_resource_list))
             temp_count_list = ",".join(item_main_resource_count_list)
-            print(item_main_id, ":", temp_list, temp_count_list)
-            c.execute("INSERT INTO Components VALUES ('" + item_main_id + "','" + temp_list + "','" + temp_count_list + "')");
+            if(len(temp_list)) != 0:
+                print(item_main_id, ":", temp_list, temp_count_list)
+            # c.execute("INSERT INTO Components VALUES ('" + item_main_id + "','" + temp_list + "','" + temp_count_list + "')");
             # x = "INSERT INTO Components VALUES ('" + uniqueid + ",'" + newlist + "')"
-
-
-
 
             # print(x)
             # c.execute(x);
@@ -236,10 +235,10 @@ for iterate in list:
                         temp_list = str(",".join(item_ench_resource_list))
                         temp_count_list = str(",".join(item_ench_resource_count_list))
                         print(item_main_id, ":", temp_list,temp_count_list)
-                        c.execute("INSERT INTO Components VALUES ('" + item_main_id + "','" + temp_list + "','" + temp_count_list + "')");
+                        # c.execute("INSERT INTO Components VALUES ('" + item_main_id + "','" + temp_list + "','" + temp_count_list + "')");
 
-                        ###############################
-            # print("\n")
+                    ###############################
+        # print("\n")
 # print(list)
 print("######### SUCCESS #########")
 

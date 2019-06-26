@@ -96,12 +96,11 @@ list = ['consumableitem', 'farmableitem', 'simpleitem', 'consumablefrominventory
 for iterate in list:
     for consumableitem in root.findall(iterate):
         shopcategory = consumableitem.get('shopcategory')
-        shopsubcategory = consumableitem.get('shopsubcategory1')
+        shopsubcategory = ("[ ] "+consumableitem.get('shopsubcategory1'))
         slottype = consumableitem.get('slottype')
         uniqueid = consumableitem.get('uniquename')
 
-
-        print(slottype,shopcategory,shopsubcategory)
+        # print(slottype,shopcategory,shopsubcategory)
 
         if shopcategory not in shopcategory_list:
             shopcategory_list.append(shopcategory)
@@ -110,14 +109,14 @@ for iterate in list:
         if slottype not in slottype_list:
             slottype_list.append(slottype)
 
-print(*slottype_list, sep = ", ")
-print("\n")
-print(*shopcategory_list, sep = ", ")
-print("\n")
-print(*shopsubcategory_list, sep = ", ")
+# print(*slottype_list, sep = ", ")
+# print("\n")
+# print(*shopcategory_list, sep = ", ")
+# print("\n")
 
-print(*failed_names_list, sep = ", ")
-print(*failed_prices_list, sep = ", ")
+print(*shopsubcategory_list, sep = "\n")
+# print(*failed_names_list, sep = ", ")
+# print(*failed_prices_list, sep = ", ")
 
 
 
